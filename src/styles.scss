@@ -38,6 +38,7 @@ button {
   width: 300px;
   text-align: center;
   margin-bottom: 20px;
+  
   .history {
     display: inline-block;
     padding: 0;
@@ -58,6 +59,8 @@ button {
 
       .btn-move {
     	  color: #fff;
+        font-size: 1.5rem;
+
         &.active {
           font-weight: bold;
           color: $green;
