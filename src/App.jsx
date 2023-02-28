@@ -4,8 +4,11 @@ import StatusMessage from './components/StatusMessage';
 import History from './components/History';
 import { calculateWinner } from './winner';
 import './styles.scss';
+
+const NEW_GAME = [{squares: Array(9).fill(null), isXNext:false}];
+
 const App = () => {
-  const [history, setHistory] = useState([{squares: Array(9).fill(null), isXNext:false}]);
+  const [history, setHistory] = useState(NEW_GAME);
   const [currentMove, setCurrentMove] = useState(0);
   const gamingBoard = history[currentMove]
 
