@@ -61,6 +61,7 @@ const onNewGameStart = () => {
         fontWeight: 'normal'
       }}> Game History</h2>
       <History moveTo={moveTo} history={history} currentMove={currentMove}/>
+      <div className='bg-balls' />
     </div>
   );
 };
