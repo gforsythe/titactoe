@@ -28,16 +28,19 @@ button {
 
 .text-green {
   color: $green;
+  font-size: 5.2rem;
 }
 
 .text-orange {
   color: $orange;
+  font-size: 5.2rem;
 }
 
 .history-wrapper {
   width: 300px;
   text-align: center;
   margin-bottom: 20px;
+  
   .history {
     display: inline-block;
     padding: 0;
@@ -58,6 +61,8 @@ button {
 
       .btn-move {
     	  color: #fff;
+        font-size: 1.5rem;
+
         &.active {
           font-weight: bold;
           color: $green;
@@ -68,8 +73,8 @@ button {
 }
 
 .status-message {
-	margin-bottom: 30px;
-	font-size: 1.2rem;
+	margin-bottom: 90px;
+	font-size: 4.5rem;
 	font-weight: lighter;
 	span {
 	  font-weight: normal;
@@ -77,14 +82,14 @@ button {
 }
 
 .btn-reset {
-  font-size: 0.8rem;
+  font-size: 1.8rem;
   color: #fff;
   border-radius: 15px;
   padding: 12px 18px;
   margin-top: 25px;
   transition: all 0.2s;
   background-color: $blue;
-  box-shadow: 0px 0px 0px 1px $orange;
+  box-shadow: 0px 0px 0px 2px $orange;
   &.active {
     background-color: $orange;
     box-shadow: none;
@@ -103,7 +108,7 @@ button {
       width: 300px;
       height: 300px;
       border-right: 5px solid #fff;
-      font-size: 4.5rem;
+      font-size: 8.5rem;
       padding: 0;
       overflow: hidden;
       transition: all 0.2s;
