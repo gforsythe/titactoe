@@ -59,7 +59,7 @@ const onNewGameStart = () => {
          <button  type='button' className={`btn-reset ${winner ? 'active' : ''}`} onClick={onNewGameStart}>Reset Game</button>
       <h2 style={{
         fontWeight: 'normal'
-      }}>Current Game History</h2>
+      }}> Game History</h2>
       <History moveTo={moveTo} history={history} currentMove={currentMove}/>
     </div>
   );

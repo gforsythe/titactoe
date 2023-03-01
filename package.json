@@ -10,7 +10,8 @@
     "lint": "eslint src/**/*.js",
     "format": "prettier --write src/**/*.js",
     "format:lint": "npm run format && npm run lint",
-    "clear": "rimraf dist .parcel-cache"
+    "clear": "rimraf dist .parcel-cache",
+    "deploy": "npm run build && npx surge dist ticTacToeReactFun.surge.sh"
   },
   "dependencies": {
     "react": "^18.2.0",
