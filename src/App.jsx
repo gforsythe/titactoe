@@ -4,19 +4,22 @@ import StatusMessage from './components/StatusMessage';
 import History from './components/History';
 import { calculateWinner } from './winner';
 import './styles.scss';
-
+// Global Variable for the game
 const NEW_GAME = [{squares: Array(9).fill(null), isXNext:false}];
 
 const App = () => {
+  //At the begining the game defaults to a New Game
   const [history, setHistory] = useState(NEW_GAME);
   const [currentMove, setCurrentMove] = useState(0);
   const gamingBoard = history[currentMove]
 
   
-
+// deconstructed from the winner JS object see winner.js
   const {winner, winningSquares} = calculateWinner(gamingBoard.squares);
 
-console.log({historyLength:history, currentMove});
+// console.log({historyLength:history, currentMove});
+
+
   const handleSquareClick = clickedPosition => {
     if (gamingBoard.squares[clickedPosition] || winner ) {
       return;
@@ -43,19 +46,19 @@ console.log({historyLength:history, currentMove});
 const moveTo = (move) => {
   setCurrentMove(move)
 }
-
+// leveraging the Global Variable
 const onNewGameStart = () => {
     setHistory(NEW_GAME);
     setCurrentMove(0);
 }
-
+//Notice what props are passed down to other componenets
   return (
     <div className="app">
-      <h1 style={{fontSize: '6rem'}}>TIC <span className='text-green'>TAC</span> TOE</h1>
+      <h1 style={{fontSize: '4rem'}}>TIC <span className='text-green'>TAC</span> TOE</h1>
      <StatusMessage winner={winner} gamingBoard={gamingBoard}/>
     
       <Board squares={gamingBoard.squares} handleSquareClick={handleSquareClick} winningSquares={winningSquares}/>
-    
+      {/* dynamic css with JS only in React */}
          <button  type='button' className={`btn-reset ${winner ? 'active' : ''}`} onClick={onNewGameStart}>Reset Game</button>
       <h2 style={{
         fontWeight: 'normal'
