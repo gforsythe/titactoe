@@ -1,10 +1,23 @@
-# Nano React App Default Javascript Template
+# TicTacToe
 
-The default template project for [nano-react-app](https://github.com/nano-react-app/nano-react-app).
+A TicTacToe Game made in React with a default template project for [nano-react-app](https://github.com/nano-react-app/nano-react-app).
+
+## Final Product
+!["main-image"]()
+!["features"]()
+
+
+## Getting Started
+1. `Git Clone` The Project
+2. `npm install` in your project
+3. ```npm start``` to dev and play the game
+
+### Run Commands
 
 - `npm start` — This will spawn a development server with a default port of `5173`.
 - `npm run build` — This will output a production build in the `dist` directory.
 - `npm run preview` — This will run the production build locally with a default port of `5173` (this will not work if you haven't generated the production build yet).
+
 
 ## Custom port
 
@@ -54,3 +67,4 @@ Use the following scripts for deployment:
 ```
 
 Then follow the normal procedure in GitHub Pages and select the `gh-pages` branch.
+
