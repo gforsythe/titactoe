@@ -2,9 +2,11 @@
 
 A TicTacToe Game made in React with a default template project for [nano-react-app](https://github.com/nano-react-app/nano-react-app).
 
+The game features game history to go back and replay a move as well as restarting the game.
+
 ## Final Product
-!["main-image"]()
-!["features"]()
+!["main-image"](https://github.com/gforsythe/titactoe/blob/main/pictures/main-image.png?raw=true)
+!["features"](https://github.com/gforsythe/titactoe/blob/main/pictures/features.png?raw=true)
 
 
 ## Getting Started
